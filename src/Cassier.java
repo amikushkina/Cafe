@@ -8,7 +8,7 @@ public class Cassier{
     public Cassier(List<Meal> meals) {
         this.meals = meals;
          for (int i =0; i < 10; i++){
-             Meal meal = new Meal();
+             Meal meal = new Meal(i);
              meals.add(meal);
          }
     }
