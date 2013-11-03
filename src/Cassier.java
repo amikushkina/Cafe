@@ -13,11 +13,12 @@ public class Cassier{
          }
     }
 
-    public Meal giveMeal(){
+    public Meal giveMeal() throws InterruptedException {
         if (meals.isEmpty()){
             System.out.println("error");
             return null;
         }else{
+            Thread.sleep(1000);
         return meals.remove(0);
         }
     }
