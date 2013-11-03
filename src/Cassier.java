@@ -14,8 +14,12 @@ public class Cassier{
     }
 
     public Meal giveMeal(){
-
+        if (meals.isEmpty()){
+            System.out.println("error");
+            return null;
+        }else{
         return meals.remove(0);
+        }
     }
 
 
