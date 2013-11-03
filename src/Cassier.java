@@ -13,13 +13,17 @@ public class Cassier{
          }
     }
 
-    public Meal giveMeal() throws InterruptedException {
+    public synchronized Meal giveMeal() {
         if (meals.isEmpty()){
             System.out.println("error");
             return null;
         }else{
-            Thread.sleep(1000);
-        return meals.remove(0);
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            }
+            return meals.remove(0);
         }
     }
 

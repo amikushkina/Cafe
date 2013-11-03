@@ -10,7 +10,12 @@ public class Client extends Thread{
 
     @Override
     public void run() {
-        System.out.println("I've got" + cassier.giveMeal());
+        Meal meal = cassier.giveMeal();
+        if (meal == null)  {
+            System.out.println("empty");
+        } else {
+        System.out.println("I've got" + meal.toString());
+        }
         super.run();    //To change body of overridden methods use File | Settings | File Templates.
     }
 
