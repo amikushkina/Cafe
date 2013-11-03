@@ -1,3 +1,5 @@
 
-public class Client {
+public class Client extends Thread{
+
+
 }
