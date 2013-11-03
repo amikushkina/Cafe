@@ -14,7 +14,7 @@ public class Client extends Thread{
         if (meal == null)  {
             System.out.println("empty");
         } else {
-        System.out.println("I've got" + meal.toString());
+        System.out.println(clientNum + "I've got" + meal.toString());
         }
         super.run();    //To change body of overridden methods use File | Settings | File Templates.
     }
