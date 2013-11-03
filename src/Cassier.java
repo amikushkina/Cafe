@@ -3,7 +3,7 @@ import java.util.List;
 
 public class Cassier{
 
-    List<Meal> meals = new LinkedList<Meal>();
+    private List<Meal> meals = new LinkedList<Meal>();
 
     public Cassier() {
         this.meals = meals;

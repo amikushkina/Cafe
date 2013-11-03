@@ -9,7 +9,9 @@ public class Client extends Thread{
 
     @Override
     public void run() {
+
         super.run();    //To change body of overridden methods use File | Settings | File Templates.
     }
+
 
 }
