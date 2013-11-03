@@ -1,7 +1,7 @@
 import java.util.LinkedList;
 import java.util.List;
 
-public class Cassier implements Runnable{
+public class Cassier{
 
     List<Meal> meals = new LinkedList<Meal>();
 
@@ -13,13 +13,6 @@ public class Cassier implements Runnable{
          }
     }
 
-
-
-
-    @Override
-    public void run() {
-
-    }
     public Meal giveMeal(){
 
         return meals.remove(0);
